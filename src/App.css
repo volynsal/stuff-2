@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  /* justify-content: space-between; */
 }
 
 .App-logo {
@@ -28,11 +30,44 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#tickets {
+  width: 10%;
+  background-color: rgba(255, 255, 255, 1) !important;
+  display: flex;
+  flex-direction: column;
+
+  position:fixed;
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  align-items: center;
+  list-style-position: inside;
+}
+
+#classify {
+  width: 30%;
+  background-color: rgba(247, 247, 247, 1) !important;
+  height: 100%;
+}
+
+#conversation {
+  background-color: rgba(255, 255, 255, 1) !important;
+  height: 100%;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: rgba(247, 247, 247, 1);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px;
+
+}
+
+#activeTask {
+  background-color: black;
 }
